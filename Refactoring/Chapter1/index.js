@@ -1,6 +1,6 @@
 let invoice = require('./invoices.json');
 let plays = require('./plays.json');
-const createStatementData = require('./createStatementData');
+import createStatementData from './createStatementData';
 
 function statement(invoice, plays) {
   return renderPlainText(createStatementData(invoice, plays));
